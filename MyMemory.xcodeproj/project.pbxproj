@@ -35,6 +35,7 @@
 		B05C04B326F219A200CD9BCC /* icon01.png in Resources */ = {isa = PBXBuildFile; fileRef = B05C04AA26F219A200CD9BCC /* icon01.png */; };
 		B05C04B526F30E6D00CD9BCC /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C04B426F30E6D00CD9BCC /* SideBarVC.swift */; };
 		B05C04B726F313F500CD9BCC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C04B626F313F500CD9BCC /* ProfileVC.swift */; };
+		B05C04B926F3191A00CD9BCC /* profile-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B05C04B826F3191A00CD9BCC /* profile-bg.png */; };
 		B0B59AFB26F1D39D0000891F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B59AFA26F1D39D0000891F /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		B05C04AA26F219A200CD9BCC /* icon01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon01.png; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/icon01.png"; sourceTree = "<group>"; };
 		B05C04B426F30E6D00CD9BCC /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
 		B05C04B626F313F500CD9BCC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		B05C04B826F3191A00CD9BCC /* profile-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile-bg.png"; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/profile-bg.png"; sourceTree = "<group>"; };
 		B0B59AF826F1D39C0000891F /* MyMemory-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyMemory-Bridging-Header.h"; sourceTree = "<group>"; };
 		B0B59AF926F1D39D0000891F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		B0B59AFA26F1D39D0000891F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		B004331F26F0E09A00AEAFE2 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B05C04B826F3191A00CD9BCC /* profile-bg.png */,
 				B05C04A326F219A200CD9BCC /* account@2x.jpg */,
 				B05C04AA26F219A200CD9BCC /* icon01.png */,
 				B05C04A226F219A200CD9BCC /* icon02.png */,
@@ -222,6 +225,7 @@
 				B004332726F0E29700AEAFE2 /* warning-icon-60@2x.png in Resources */,
 				B05C04AD26F219A200CD9BCC /* icon05.png in Resources */,
 				B05C04B226F219A200CD9BCC /* icon04.png in Resources */,
+				B05C04B926F3191A00CD9BCC /* profile-bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
