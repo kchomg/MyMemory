@@ -172,7 +172,7 @@
         <!--메모 작성-->
         <scene sceneID="Kwb-e2-Qm9">
             <objects>
-                <viewController id="rn2-or-71u" customClass="MemoFormVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoForm" id="rn2-or-71u" customClass="MemoFormVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Wu-pd-3UN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,10 +299,10 @@
             </objects>
             <point key="canvasLocation" x="-342" y="51"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Ide BarVC-->
         <scene sceneID="9Bp-Ly-SIZ">
             <objects>
-                <tableViewController id="nBI-fu-eK0" sceneMemberID="viewController">
+                <tableViewController id="nBI-fu-eK0" customClass="SIdeBarVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gF2-Bo-P9A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
