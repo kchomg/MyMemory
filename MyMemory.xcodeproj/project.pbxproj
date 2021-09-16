@@ -34,6 +34,7 @@
 		B05C04B226F219A200CD9BCC /* icon04.png in Resources */ = {isa = PBXBuildFile; fileRef = B05C04A926F219A200CD9BCC /* icon04.png */; };
 		B05C04B326F219A200CD9BCC /* icon01.png in Resources */ = {isa = PBXBuildFile; fileRef = B05C04AA26F219A200CD9BCC /* icon01.png */; };
 		B05C04B526F30E6D00CD9BCC /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C04B426F30E6D00CD9BCC /* SideBarVC.swift */; };
+		B05C04B726F313F500CD9BCC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C04B626F313F500CD9BCC /* ProfileVC.swift */; };
 		B0B59AFB26F1D39D0000891F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B59AFA26F1D39D0000891F /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		B05C04A926F219A200CD9BCC /* icon04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon04.png; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/icon04.png"; sourceTree = "<group>"; };
 		B05C04AA26F219A200CD9BCC /* icon01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon01.png; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/icon01.png"; sourceTree = "<group>"; };
 		B05C04B426F30E6D00CD9BCC /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
+		B05C04B626F313F500CD9BCC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B0B59AF826F1D39C0000891F /* MyMemory-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyMemory-Bridging-Header.h"; sourceTree = "<group>"; };
 		B0B59AF926F1D39D0000891F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		B0B59AFA26F1D39D0000891F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				B004331B26EF826700AEAFE2 /* MemoData.swift */,
 				B004331D26F0DF4900AEAFE2 /* CSLogButton.swift */,
 				B05C04B426F30E6D00CD9BCC /* SideBarVC.swift */,
+				B05C04B626F313F500CD9BCC /* ProfileVC.swift */,
 				B0B59AF826F1D39C0000891F /* MyMemory-Bridging-Header.h */,
 			);
 			path = MyMemory;
@@ -237,6 +240,7 @@
 				B05C04B526F30E6D00CD9BCC /* SideBarVC.swift in Sources */,
 				B00432FF26EF7C9C00AEAFE2 /* SceneDelegate.swift in Sources */,
 				B004331E26F0DF4A00AEAFE2 /* CSLogButton.swift in Sources */,
+				B05C04B726F313F500CD9BCC /* ProfileVC.swift in Sources */,
 				B004331C26EF826700AEAFE2 /* MemoData.swift in Sources */,
 				B0B59AFB26F1D39D0000891F /* SWRevealViewController.m in Sources */,
 				B004331826EF821200AEAFE2 /* MemoReadVC.swift in Sources */,

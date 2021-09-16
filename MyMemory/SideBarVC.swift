@@ -84,6 +84,12 @@ class SIdeBarVC: UITableViewController {
             target.pushViewController(uv!, animated: true)
             // 사이드 바를 닫아준다.
             self.revealViewController().revealToggle(self)
+        } else if indexPath.row == 5 {
+            let uv = self.storyboard?.instantiateViewController(withIdentifier: "_Profile")
+            uv?.modalPresentationStyle = .fullScreen // iOS 13 부터는 fullscreen 으로 따로 설정하지 않으면 automatic 으로 기본값이 되어있음.
+            self.present(uv!, animated: true) {
+                self.revealViewController().revealToggle(self)
+            }
         }
     }
 }
