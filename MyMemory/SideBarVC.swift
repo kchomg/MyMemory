@@ -76,4 +76,14 @@ class SIdeBarVC: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let uv = self.storyboard?.instantiateViewController(withIdentifier: "MemoForm")
+            let target = self.revealViewController().frontViewController as! UINavigationController
+            target.pushViewController(uv!, animated: true)
+            // 사이드 바를 닫아준다.
+            self.revealViewController().revealToggle(self)
+        }
+    }
 }
