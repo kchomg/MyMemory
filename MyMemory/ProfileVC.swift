@@ -8,6 +8,7 @@
 import UIKit
 class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let uinfo = UserInfoManager() // 개인 정보 관리 매니저
+    
     let profileImage = UIImageView() // 프로필 사진 이미지
     let tv = UITableView() // 프로필 목록
     
