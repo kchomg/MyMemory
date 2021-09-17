@@ -25,6 +25,10 @@
 		B004332526F0E28F00AEAFE2 /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B004332426F0E28F00AEAFE2 /* memo-background@2x.png */; };
 		B004332726F0E29700AEAFE2 /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B004332626F0E29700AEAFE2 /* warning-icon-60@2x.png */; };
 		B04812D526F4A82B007A1006 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04812D426F4A82B007A1006 /* UserInfoManager.swift */; };
+		B04812D726F4BC59007A1006 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04812D626F4BC59007A1006 /* Tutorial.storyboard */; };
+		B04812D926F4BF96007A1006 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04812D826F4BF96007A1006 /* Utils.swift */; };
+		B04812DB26F4C03A007A1006 /* TutorialContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04812DA26F4C03A007A1006 /* TutorialContentsVC.swift */; };
+		B04812DE26F4C1A9007A1006 /* TutorialMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04812DD26F4C1A9007A1006 /* TutorialMasterVC.swift */; };
 		B05C04AB26F219A200CD9BCC /* icon02.png in Resources */ = {isa = PBXBuildFile; fileRef = B05C04A226F219A200CD9BCC /* icon02.png */; };
 		B05C04AC26F219A200CD9BCC /* account@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B05C04A326F219A200CD9BCC /* account@2x.jpg */; };
 		B05C04AD26F219A200CD9BCC /* icon05.png in Resources */ = {isa = PBXBuildFile; fileRef = B05C04A426F219A200CD9BCC /* icon05.png */; };
@@ -61,6 +65,10 @@
 		B004332426F0E28F00AEAFE2 /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "memo-background@2x.png"; path = "../../../Downloads/swift_practice/MyMemory-Chapter03/Resources/memo-background@2x.png"; sourceTree = "<group>"; };
 		B004332626F0E29700AEAFE2 /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "warning-icon-60@2x.png"; path = "../../../Downloads/swift_practice/MyMemory-Chapter03/Resources/warning-icon-60@2x.png"; sourceTree = "<group>"; };
 		B04812D426F4A82B007A1006 /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		B04812D626F4BC59007A1006 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		B04812D826F4BF96007A1006 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B04812DA26F4C03A007A1006 /* TutorialContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentsVC.swift; sourceTree = "<group>"; };
+		B04812DD26F4C1A9007A1006 /* TutorialMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMasterVC.swift; sourceTree = "<group>"; };
 		B05C04A226F219A200CD9BCC /* icon02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon02.png; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/icon02.png"; sourceTree = "<group>"; };
 		B05C04A326F219A200CD9BCC /* account@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "account@2x.jpg"; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/account@2x.jpg"; sourceTree = "<group>"; };
 		B05C04A426F219A200CD9BCC /* icon05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon05.png; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/icon05.png"; sourceTree = "<group>"; };
@@ -109,8 +117,11 @@
 		B00432FB26EF7C9C00AEAFE2 /* MyMemory */ = {
 			isa = PBXGroup;
 			children = (
+				B04812DC26F4C057007A1006 /* Tutorial */,
 				B0B59AF926F1D39D0000891F /* SWRevealViewController.h */,
 				B0B59AFA26F1D39D0000891F /* SWRevealViewController.m */,
+				B04812D426F4A82B007A1006 /* UserInfoManager.swift */,
+				B04812D826F4BF96007A1006 /* Utils.swift */,
 				B00432FC26EF7C9C00AEAFE2 /* AppDelegate.swift */,
 				B00432FE26EF7C9C00AEAFE2 /* SceneDelegate.swift */,
 				B004330026EF7C9C00AEAFE2 /* ViewController.swift */,
@@ -127,7 +138,6 @@
 				B004331D26F0DF4900AEAFE2 /* CSLogButton.swift */,
 				B05C04B426F30E6D00CD9BCC /* SideBarVC.swift */,
 				B05C04B626F313F500CD9BCC /* ProfileVC.swift */,
-				B04812D426F4A82B007A1006 /* UserInfoManager.swift */,
 				B0B59AF826F1D39C0000891F /* MyMemory-Bridging-Header.h */,
 			);
 			path = MyMemory;
@@ -152,6 +162,16 @@
 				B004332626F0E29700AEAFE2 /* warning-icon-60@2x.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		B04812DC26F4C057007A1006 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				B04812D626F4BC59007A1006 /* Tutorial.storyboard */,
+				B04812DA26F4C03A007A1006 /* TutorialContentsVC.swift */,
+				B04812DD26F4C1A9007A1006 /* TutorialMasterVC.swift */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +242,7 @@
 				B05C04B326F219A200CD9BCC /* icon01.png in Resources */,
 				B004332326F0E27600AEAFE2 /* fountainpen@2x.png in Resources */,
 				B004332526F0E28F00AEAFE2 /* memo-background@2x.png in Resources */,
+				B04812D726F4BC59007A1006 /* Tutorial.storyboard in Resources */,
 				B05C04B126F219A200CD9BCC /* icon03.png in Resources */,
 				B05C04AC26F219A200CD9BCC /* account@2x.jpg in Resources */,
 				B004330426EF7C9C00AEAFE2 /* Main.storyboard in Resources */,
@@ -244,6 +265,7 @@
 				B004331426EF81EF00AEAFE2 /* MemoListVC.swift in Sources */,
 				B004331626EF820700AEAFE2 /* MemoFormVC.swift in Sources */,
 				B004330126EF7C9C00AEAFE2 /* ViewController.swift in Sources */,
+				B04812D926F4BF96007A1006 /* Utils.swift in Sources */,
 				B00432FD26EF7C9C00AEAFE2 /* AppDelegate.swift in Sources */,
 				B05C04B526F30E6D00CD9BCC /* SideBarVC.swift in Sources */,
 				B00432FF26EF7C9C00AEAFE2 /* SceneDelegate.swift in Sources */,
@@ -252,6 +274,8 @@
 				B004331C26EF826700AEAFE2 /* MemoData.swift in Sources */,
 				B0B59AFB26F1D39D0000891F /* SWRevealViewController.m in Sources */,
 				B004331826EF821200AEAFE2 /* MemoReadVC.swift in Sources */,
+				B04812DE26F4C1A9007A1006 /* TutorialMasterVC.swift in Sources */,
+				B04812DB26F4C03A007A1006 /* TutorialContentsVC.swift in Sources */,
 				B004331A26EF824000AEAFE2 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
