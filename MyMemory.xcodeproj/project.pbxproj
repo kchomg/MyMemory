@@ -24,6 +24,7 @@
 		B004332326F0E27600AEAFE2 /* fountainpen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B004332226F0E27600AEAFE2 /* fountainpen@2x.png */; };
 		B004332526F0E28F00AEAFE2 /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B004332426F0E28F00AEAFE2 /* memo-background@2x.png */; };
 		B004332726F0E29700AEAFE2 /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B004332626F0E29700AEAFE2 /* warning-icon-60@2x.png */; };
+		B04812D526F4A82B007A1006 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04812D426F4A82B007A1006 /* UserInfoManager.swift */; };
 		B05C04AB26F219A200CD9BCC /* icon02.png in Resources */ = {isa = PBXBuildFile; fileRef = B05C04A226F219A200CD9BCC /* icon02.png */; };
 		B05C04AC26F219A200CD9BCC /* account@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B05C04A326F219A200CD9BCC /* account@2x.jpg */; };
 		B05C04AD26F219A200CD9BCC /* icon05.png in Resources */ = {isa = PBXBuildFile; fileRef = B05C04A426F219A200CD9BCC /* icon05.png */; };
@@ -59,6 +60,7 @@
 		B004332226F0E27600AEAFE2 /* fountainpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fountainpen@2x.png"; path = "MyMemory/Assets.xcassets/fountainpen.imageset/fountainpen@2x.png"; sourceTree = SOURCE_ROOT; };
 		B004332426F0E28F00AEAFE2 /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "memo-background@2x.png"; path = "../../../Downloads/swift_practice/MyMemory-Chapter03/Resources/memo-background@2x.png"; sourceTree = "<group>"; };
 		B004332626F0E29700AEAFE2 /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "warning-icon-60@2x.png"; path = "../../../Downloads/swift_practice/MyMemory-Chapter03/Resources/warning-icon-60@2x.png"; sourceTree = "<group>"; };
+		B04812D426F4A82B007A1006 /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
 		B05C04A226F219A200CD9BCC /* icon02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon02.png; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/icon02.png"; sourceTree = "<group>"; };
 		B05C04A326F219A200CD9BCC /* account@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "account@2x.jpg"; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/account@2x.jpg"; sourceTree = "<group>"; };
 		B05C04A426F219A200CD9BCC /* icon05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon05.png; path = "../../../Downloads/swift_practice/MyMemory-Chapter04/Resources/icon05.png"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				B004331D26F0DF4900AEAFE2 /* CSLogButton.swift */,
 				B05C04B426F30E6D00CD9BCC /* SideBarVC.swift */,
 				B05C04B626F313F500CD9BCC /* ProfileVC.swift */,
+				B04812D426F4A82B007A1006 /* UserInfoManager.swift */,
 				B0B59AF826F1D39C0000891F /* MyMemory-Bridging-Header.h */,
 			);
 			path = MyMemory;
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04812D526F4A82B007A1006 /* UserInfoManager.swift in Sources */,
 				B004330726EF7C9C00AEAFE2 /* MyMemory.xcdatamodeld in Sources */,
 				B004331426EF81EF00AEAFE2 /* MemoListVC.swift in Sources */,
 				B004331626EF820700AEAFE2 /* MemoFormVC.swift in Sources */,
