@@ -7,6 +7,7 @@
 
 import UIKit
 class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    let uinfo = UserInfoManager() // 개인 정보 관리 매니저
     let profileImage = UIImageView() // 프로필 사진 이미지
     let tv = UITableView() // 프로필 목록
     
@@ -31,7 +32,7 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.view.addSubview(bgImg) // 프로필 이미지 보다 먼저 처리될 수 있도록 코드 순서를 신경써야한다.
         
         // 프로필 사진에 들어갈 기본 이미지
-        let image = UIImage(named: "account.jpg")
+        let image = self.uinfo.profile
         
         // 프로필 이미지 처리
         self.profileImage.image = image
@@ -71,10 +72,10 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             cell.textLabel?.text = "이름"
-            cell.detailTextLabel?.text = "꼼꼼한 재은 씨"
+            cell.detailTextLabel?.text = self.uinfo.name ?? "Login please"
         case 1:
             cell.textLabel?.text = "계정"
-            cell.detailTextLabel?.text = "sqlpro@naver.com"
+            cell.detailTextLabel?.text = self.uinfo.account ?? "Login please"
         default:
         ()
         }
@@ -83,5 +84,59 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @objc func close(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    // 로그인 창을 표시할 메소드
+    @objc func doLogin(_ sender: Any) {
+        let loginAlert = UIAlertController(title: "LOGIN", message: nil, preferredStyle: .alert)
+        
+        loginAlert.addTextField { (tf) in
+            tf.placeholder = "Your Account"
+        }
+        
+        loginAlert.addTextField { (tf) in
+            tf.placeholder = "Password"
+            tf.isSecureTextEntry = true
+        }
+        
+        loginAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        loginAlert.addAction(UIAlertAction(title: "Login", style: .destructive, handler: { (_) in
+            let account = loginAlert.textFields?[0].text ?? ""
+            let passwd = loginAlert.textFields?[1].text ?? ""
+            
+            if self.uinfo.login(account: account, passwd: passwd) {
+                // 로그인 성공시
+                self.tv.reloadData()
+                self.profileImage.image = self.uinfo.profile // 이미지 프로필을 갱신한다.
+            } else {
+                let msg = "로그인에 실패하였습니다."
+                let alert = UIAlertController(title: nil, message: msg, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                
+                self.present(alert, animated: false, completion: nil)
+            }
+        }))
+        self.present(loginAlert, animated: false, completion: nil)
+    }
+    
+    @objc func doLogout(_ sender: Any) {
+        let msg = "로그아웃하시겠습니까?"
+        let alert = UIAlertController(title: nil, message: msg, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "확인", style: .destructive, handler: { (_) in
+            if self.uinfo.logout() {
+                // 로그아웃 시 처리할 내용
+                self.tv.reloadData()
+                self.profileImage.image = self.uinfo.profile
+            }
+        }))
+        self.present(alert, animated: false, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.uinfo.isLogin == false {
+            // 로그인되어 있지 않다면 로그인 창을 띄워 준다.
+            self.doLogin(self.tv)
+        }
     }
 }

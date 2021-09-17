@@ -40,6 +40,17 @@ class UserInfoManager {
         }
     }
     
+    var name: String? {
+        get {
+            return UserDefaults.standard.string(forKey: UserInfoKey.name)
+        }
+        set (v) {
+            let ud = UserDefaults.standard
+            ud.set(v, forKey: UserInfoKey.name)
+            ud.synchronize()
+        }
+    }
+    
     var profile: UIImage? {
         get {
             let ud = UserDefaults.standard
