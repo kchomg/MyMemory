@@ -8,6 +8,8 @@
 import UIKit
 
 class MemoListVC: UITableViewController {
+    lazy var dao = MemoDAO()
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,6 +64,9 @@ class MemoListVC: UITableViewController {
             self.present(vc!, animated: false, completion: nil)
             return
         }
+        
+        // 코어 데이터에 저장된 데이터를 가져온다.
+        self.appDelegate.memolist = self.dao.fetch()
         
         self.tableView.reloadData()
     }
